@@ -967,25 +967,58 @@
 
 <script>
   var selected = new Set();
+  var EMAIL = 'erxmour@gmail.com';
+
+  function buildMailto() {
+    if (selected.size === 0) {
+      var subject = encodeURIComponent('Inquiry');
+      var body = encodeURIComponent('Hi, I\'d like to discuss a project.\n\nProject details:\n');
+      return 'mailto:' + EMAIL + '?subject=' + subject + '&body=' + body;
+    }
+    var arr = Array.from(selected);
+    var svcList = arr.join(', ');
+    var subject = encodeURIComponent('Inquiry — ' + svcList);
+    var bodyLines = [
+      'Hi erxmour,',
+      '',
+      'I\'m interested in: ' + svcList + '.',
+      '',
+      'Project details:',
+      '— Artist / project name:',
+      '— Reference tracks or sound:',
+      '— Timeline:',
+      '— Budget (optional):',
+      '',
+      'Additional notes:'
+    ];
+    var body = encodeURIComponent(bodyLines.join('\n'));
+    return 'mailto:' + EMAIL + '?subject=' + subject + '&body=' + body;
+  }
+
   document.querySelectorAll('.svc').forEach(function(el){
-    el.addEventListener('click', function(){
+    el.addEventListener('click', function(e){
+      e.preventDefault();
       var name = el.getAttribute('data-svc');
       el.classList.toggle('active');
       if(selected.has(name)){ selected.delete(name); } else { selected.add(name); }
       var list = document.getElementById('brief-list');
-      var send = document.getElementById('brief-send');
       if(selected.size === 0){
         list.textContent = 'none';
-        send.href = 'mailto:erxmour@gmail.com?subject=Inquiry';
       } else {
-        var arr = Array.from(selected);
-        list.textContent = arr.join(', ');
-        var subject = encodeURIComponent('Inquiry — ' + arr.join(', '));
-        var body = encodeURIComponent('Hi, I\'m interested in: ' + arr.join(', ') + '.\n\nProject details:\n');
-        send.href = 'mailto:erxmour@gmail.com?subject=' + subject + '&body=' + body;
+        list.textContent = Array.from(selected).join(', ');
       }
     });
   });
+
+  var sendBtn = document.getElementById('brief-send');
+  if (sendBtn) {
+    sendBtn.addEventListener('click', function(e){
+      e.preventDefault();
+      var url = buildMailto();
+      window.location.href = url;
+      return false;
+    });
+  }
 
   const player = document.getElementById("audio-player");
   const rows = document.querySelectorAll(".demo-row");

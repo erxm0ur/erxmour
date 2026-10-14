@@ -888,7 +888,7 @@
   </div>
   <div class="brief-bar reveal">
     <span class="mono">Selected: <span id="brief-list">none</span></span>
-    <a id="brief-send" class="magnet" href="mailto:erxmour@gmail.com?subject=Inquiry">Send inquiry</a>
+    <button type="button" id="brief-send" class="magnet">Send inquiry</button>
   </div>
 </section>
 
@@ -965,35 +965,62 @@
   </div>
 </footer>
 
-<script>
-  var selected = new Set();
-  var EMAIL = 'erxmour@gmail.com';
+var selected = new Set();
+var EMAIL = 'erxmour@gmail.com';
 
-  function buildMailto() {
-    if (selected.size === 0) {
-      var subject = encodeURIComponent('Inquiry');
-      var body = encodeURIComponent('Hi, I\'d like to discuss a project.\n\nProject details:\n');
-      return 'mailto:' + EMAIL + '?subject=' + subject + '&body=' + body;
-    }
+var sendBtn = document.getElementById('brief-send');
+
+if (sendBtn) {
+  sendBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+
     var arr = Array.from(selected);
-    var svcList = arr.join(', ');
-    var subject = encodeURIComponent('Inquiry — ' + svcList);
-    var bodyLines = [
-      'Hi erxmour,',
-      '',
-      'I\'m interested in: ' + svcList + '.',
-      '',
-      'Project details:',
-      '— Artist / project name:',
-      '— Reference tracks or sound:',
-      '— Timeline:',
-      '— Budget (optional):',
-      '',
-      'Additional notes:'
-    ];
-    var body = encodeURIComponent(bodyLines.join('\n'));
-    return 'mailto:' + EMAIL + '?subject=' + subject + '&body=' + body;
-  }
+    var svcList = arr.length > 0 ? arr.join(', ') : '';
+    var subject = svcList ? 'Inquiry — ' + svcList : 'Inquiry';
+    var bodyLines = svcList
+      ? [
+          'Hi erxmour,',
+          '',
+          "I'm interested in: " + svcList + '.',
+          '',
+          'Project details:',
+          '— Artist / project name:',
+          '— Reference tracks or sound:',
+          '— Timeline:',
+          '— Budget (optional):',
+          '',
+          'Additional notes:'
+        ]
+      : ["Hi, I'd like to discuss a project.", '', 'Project details:'];
+
+    var bodyText = bodyLines.join('\n');
+    var isInApp = /Instagram|FBAN|FBAV|FB_IAB|TikTok|Snapchat/i.test(navigator.userAgent);
+
+    if (isInApp) {
+      // inside ig browser: copy text and redirect to dm to prevent error
+      var textToCopy = subject + '\n\n' + bodyText;
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(textToCopy);
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = textToCopy;
+        ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch (err) {}
+        document.body.removeChild(ta);
+      }
+
+      alert('Request copied! Redirecting to Instagram DM...');
+      window.location.href = 'https://ig.me/m/erxmour';
+    } else {
+      // regular browsers: standard mailto opens mail app smoothly
+      var mailtoUrl = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(bodyText);
+      window.location.href = mailtoUrl;
+    }
+  });
+}
 
   document.querySelectorAll('.svc').forEach(function(el){
     el.addEventListener('click', function(e){

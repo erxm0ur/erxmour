@@ -19,11 +19,11 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="erxmour — Music Producer">
 <meta name="twitter:description" content="Music producer working directly with artists. One sound, made by one person.">
-<meta property="og:image" content="ERXMOUR.JPEG">
+<meta property="og:image" content="https://erxmour.com/ERXMOUR.JPEG">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="erxmour — Music Producer">
-<meta name="twitter:image" content="ERXMOUR.JPEG">
+<meta name="twitter:image" content="https://erxmour.com/ERXMOUR.JPEG">
 <title>erxmour — Music Producer</title>
 <style>
   @font-face {
@@ -477,22 +477,6 @@
   }
   .brief-bar a:hover{background:transparent;color:var(--white);}
 
-  /* ---------- SEND FALLBACK STYLES ---------- */
-  .send-fallback{
-    max-width:1184px;margin:-20px auto 36px;padding:0 28px;
-    display:flex;gap:12px;flex-wrap:wrap;align-items:center;
-    font-family:'Radlush',sans-serif;font-weight:600;font-size:11px;
-    letter-spacing:0.16em;text-transform:uppercase;color:var(--grey);
-  }
-  .send-fallback[hidden]{display:none;}
-  .send-fallback button, .send-fallback a{
-    font:inherit;letter-spacing:inherit;text-transform:inherit;
-    color:var(--white);background:transparent;cursor:pointer;
-    border:1px solid var(--line-strong);padding:10px 16px;
-    transition:background .35s var(--ease), color .35s var(--ease);
-  }
-  .send-fallback button:hover, .send-fallback a:hover{background:var(--white);color:var(--black);}
-
   /* ---------- DEMOS ---------- */
   .demo-list{padding:0 28px 56px;max-width:1240px;margin:0 auto;perspective:1200px;}
   .demo-row{
@@ -794,7 +778,6 @@
     .services-grid,.contact-grid,.demo-list{grid-template-columns:1fr;padding-left:20px;padding-right:20px;}
     .svc,.svc:nth-child(4),.svc:nth-child(5){grid-column:auto;}
     .brief-bar{margin-left:20px;margin-right:20px;}
-    .send-fallback{padding:0 20px;margin-top:-24px;}
     .demo-row{grid-template-columns:34px 1fr 60px 42px;padding:18px 18px;}
     .hero-cta{flex-direction:column;width:100%;}
     .hero-cta a{text-align:center;}
@@ -820,417 +803,406 @@
       <a href="#demos">Demos</a>
       <a href="#contact">Contact</a>
     </div>
-    <a class="navcta" href="#contact">Let's Work</a>
+    <a class="navcta magnet" href="#contact">Lock in w/me</a>
   </nav>
 </header>
 
-<main id="top">
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-bg">
-      <img src="ERXMOUR.JPEG" alt="erxmour background">
-    </div>
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1 class="rise" style="--d:100ms;">ERXMOUR</h1>
-        <div class="hero-sub rise" style="--d:250ms;">Music producer working directly with artists. Sound design, full project handling, and executive production.</div>
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <img src="ERXMOUR.JPEG" alt="">
+  </div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="display rise" style="--d:0.08s">erxmour</h1>
+      <p class="hero-sub rise" style="--d:0.28s">Music producer working directly with artists<br>One sound, made by one person</p>
+      <div class="hero-cta rise" style="--d:0.48s">
+        <a class="solid magnet" href="#contact">Lock in</a>
+        <a class="magnet" href="#demos">Hear the sound</a>
       </div>
-      <div class="hero-cta rise" style="--d:400ms;">
-        <a href="#services" class="solid">Services</a>
-        <a href="#demos">Listen Demos</a>
-      </div>
-    </div>
-    <div class="hero-meta">
-      <div class="frame-label">EST. 2026</div>
-      <div class="frame-label">KOSTANAY / GLOBAL</div>
-    </div>
-  </section>
-
-  <!-- MARQUEE -->
-  <div class="marquee">
-    <div class="marquee-track">
-      <span>PRODUCTION</span>
-      <span>MIX & MASTER</span>
-      <span>SOUND DESIGN</span>
-      <span>EXECUTIVE PRODUCTION</span>
-      <span>PRODUCTION</span>
-      <span>MIX & MASTER</span>
-      <span>SOUND DESIGN</span>
-      <span>EXECUTIVE PRODUCTION</span>
     </div>
   </div>
+  <div class="hero-meta rise" style="--d:0.68s">
+    <span class="frame-label">Kostanay, KZ</span>
+    <span class="frame-label" id="live-time">3:32 AM</span>
+  </div>
+</section>
 
-  <!-- ABOUT SECTION -->
-  <section id="about">
-    <div class="statement">
-      <div class="statement-num reveal">
-        <span>01</span>
-      </div>
-      <div class="statement-body">
-        <div class="sec-label reveal">ABOUT THE SOUND</div>
-        <h2 class="reveal">ONE VISION, HANDLED PERSONALLY FROM START TO FINISH</h2>
-        <p class="reveal">Working directly with artists to create distinct, forward-thinking records. Focused on unique sound choices, vocal placement, and final loudness that holds up everywhere.</p>
-        <div class="statement-tags">
-          <span class="reveal">Trap</span>
-          <span class="reveal">Dark Sound</span>
-          <span class="reveal">Alt-Rap</span>
-          <span class="reveal">Custom Mix</span>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="marquee reveal">
+  <div class="marquee-track">
+    <span>PRODUCTION</span><span>MIX &amp; MASTER</span><span>SOUND DESIGN</span><span>FULL PROJECT</span><span>CONSULTATION</span>
+    <span>PRODUCTION</span><span>MIX &amp; MASTER</span><span>SOUND DESIGN</span><span>FULL PROJECT</span><span>CONSULTATION</span>
+  </div>
+</div>
 
-  <!-- SERVICES SECTION -->
-  <section id="services" class="sec-pad">
-    <div class="wrap">
-      <div class="sec-label reveal">02 — SERVICES</div>
-      <h2 class="sec-title reveal">PICK WHAT YOU NEED</h2>
-    </div>
-
-    <div class="services-grid">
-      <div class="svc reveal" data-svc="Production">
-        <div class="svc-idx">01</div>
-        <div class="svc-title">Production</div>
-        <div class="svc-desc">Full beat built from scratch around your voice and reference sound – not pulled from a pack</div>
-        <div class="svc-toggle"><i></i><span>Select</span></div>
-      </div>
-      <div class="svc reveal" data-svc="Mix & Master">
-        <div class="svc-idx">02</div>
-        <div class="svc-title">Mix & Master</div>
-        <div class="svc-desc">Balance, space, clarity, and final loudness pass – your vocal sitting right in the track on every system</div>
-        <div class="svc-toggle"><i></i><span>Select</span></div>
-      </div>
-      <div class="svc reveal" data-svc="Sound Design">
-        <div class="svc-idx">03</div>
-        <div class="svc-title">Sound Design</div>
-        <div class="svc-desc">Custom textures, transitions, and one-off elements for a track that needs its own identity</div>
-        <div class="svc-toggle"><i></i><span>Select</span></div>
-      </div>
-      <div class="svc reveal" data-svc="Full Project">
-        <div class="svc-idx">04</div>
-        <div class="svc-title">Full Project</div>
-        <div class="svc-desc">Production through master, handled personally, start to finish</div>
-        <div class="svc-toggle"><i></i><span>Select</span></div>
-      </div>
-      <div class="svc reveal" data-svc="Consultation">
-        <div class="svc-idx">05</div>
-        <div class="svc-title">Consultation</div>
-        <div class="svc-desc">A direct session to work through an existing track that isn't landing yet</div>
-        <div class="svc-toggle"><i></i><span>Select</span></div>
+<section id="about">
+  <div class="statement">
+    <div class="statement-num reveal-left reveal"><span>01</span></div>
+    <div class="statement-body">
+      <p class="sec-label reveal">ABOUT</p>
+      <h2 class="display reveal" style="--d:80ms">one producer<br>start to finish</h2>
+      <p class="reveal" style="--d:140ms">Every project gets full attention — no assistants, no batch production Just pure focus on the sound</p>
+      <div class="statement-tags">
+        <span class="reveal" style="--d:200ms">Selective roster</span>
+        <span class="reveal" style="--d:280ms">Direct contact only</span>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="brief-bar reveal">
-      <div class="mono">Selected: <span id="brief-list">none</span></div>
-      <a href="#" id="brief-send">Send Inquiry</a>
+<section id="services">
+  <div class="wrap sec-pad" style="padding-bottom:0;">
+   <p class="sec-label reveal">02 / SERVICES</p>
+   <h2 class="sec-title display reveal" style="--d:80ms">Pick what<br>you need</h2>
+  </div>
+  <div class="services-grid">
+    <div class="svc reveal" data-svc="Production" style="--d:0ms">
+      <div class="svc-idx">01</div>
+      <div class="svc-title">Production</div>
+      <p class="svc-desc">Full beat built from scratch around your voice and reference sound — not pulled from a pack</p>
+      <div class="svc-toggle"><i></i> Select</div>
     </div>
-
-    <!-- Запасной фоллбэк для Инсты/браузеров без почты -->
-    <div id="send-fallback" class="send-fallback" hidden>
-      <span>Email not opening?</span>
-      <button type="button" id="copy-request">Copy request</button>
-      <a href="https://ig.me/m/erxmour" target="_blank" rel="noopener">DM on Instagram</a>
-      <span id="copy-status" aria-live="polite"></span>
+    <div class="svc reveal" data-svc="Mix & Master" style="--d:80ms">
+      <div class="svc-idx">02</div>
+      <div class="svc-title">Mix & Master</div>
+      <p class="svc-desc">Balance, space, clarity, and final loudness pass — your vocal sitting right in the track on every system</p>
+      <div class="svc-toggle"><i></i> Select</div>
     </div>
-  </section>
-
-  <!-- DEMOS SECTION -->
-  <section id="demos" class="sec-pad">
-    <div class="wrap">
-      <div class="sec-label reveal">03 — DEMOS</div>
-      <h2 class="sec-title reveal">RECENT SOUNDS</h2>
+    <div class="svc reveal" data-svc="Sound Design" style="--d:160ms">
+      <div class="svc-idx">03</div>
+      <div class="svc-title">Sound Design</div>
+      <p class="svc-desc">Custom textures, transitions, and one-off elements for a track that needs its own identity</p>
+      <div class="svc-toggle"><i></i> Select</div>
     </div>
+    <div class="svc reveal" data-svc="Full Project" style="--d:0ms">
+      <div class="svc-idx">04</div>
+      <div class="svc-title">Full Project</div>
+      <p class="svc-desc">Production through master, handled personally, start to finish</p>
+      <div class="svc-toggle"><i></i> Select</div>
+    </div>
+    <div class="svc reveal" data-svc="Consultation" style="--d:80ms">
+      <div class="svc-idx">05</div>
+      <div class="svc-title">Consultation</div>
+      <p class="svc-desc">A direct session to work through an existing track that isn't landing yet</p>
+      <div class="svc-toggle"><i></i> Select</div>
+    </div>
+  </div>
+  <div class="brief-bar reveal">
+    <span class="mono">Selected: <span id="brief-list">none</span></span>
+    <a id="brief-send" class="magnet" href="mailto:erxmour@gmail.com?subject=Inquiry">Send inquiry</a>
+  </div>
+</section>
 
-    <div class="demo-list">
-      <div class="demo-row reveal" data-src="demo1.mp3">
-        <div class="demo-idx">01</div>
-        <div class="demo-name">CATALOG DEMO 1 <small>Dark Trap / Custom Mix</small></div>
-        <div class="demo-time">--:--</div>
-        <button class="demo-play-btn" aria-label="Play demo">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-        </button>
-        <div class="demo-bar"><i></i></div>
+<section id="demos">
+  <div class="wrap sec-pad" style="padding-bottom:0;">
+    <p class="sec-label reveal">03 / DEMOS</p>
+    <h2 class="sec-title display reveal" style="--d:80ms">Previews,<br>not the catalog</h2>
+  </div>
+  <div class="demo-list">
+    <div class="demo-row reveal" data-audio="iSLEEP.mp3" style="--d:0ms">
+      <span class="demo-idx">01</span>
+      <div class="demo-name">iSLEEP<small>139 BPM</small></div>
+      <span class="demo-time">0:30</span>
+      <div class="demo-play-btn">
+        <svg class="play-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+        <svg class="pause-icon" viewBox="0 0 24 24" style="display:none;"><path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
       </div>
-
-      <div class="demo-row reveal" data-src="demo2.mp3">
-        <div class="demo-idx">02</div>
-        <div class="demo-name">CATALOG DEMO 2 <small>Experimental / Vocal Chain</small></div>
-        <div class="demo-time">--:--</div>
-        <button class="demo-play-btn" aria-label="Play demo">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-        </button>
-        <div class="demo-bar"><i></i></div>
+      <div class="demo-bar"><i></i></div>
+    </div>
+    <div class="demo-row reveal" data-audio="EASTER.mp3" style="--d:80ms">
+      <span class="demo-idx">02</span>
+      <div class="demo-name">EASTER<small>126 BPM</small></div>
+      <span class="demo-time">0:30</span>
+      <div class="demo-play-btn">
+        <svg class="play-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+        <svg class="pause-icon" viewBox="0 0 24 24" style="display:none;"><path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
       </div>
+      <div class="demo-bar"><i></i></div>
     </div>
-  </section>
-
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="sec-pad">
-    <div class="contact-head">
-      <div class="wrap">
-        <div class="sec-label reveal">04 — CONTACT</div>
-        <h2 class="reveal">LET'S BUILD YOUR NEXT RECORD</h2>
+    <div class="demo-row reveal" data-audio="JOHN KRAMER.mp3" style="--d:160ms">
+      <span class="demo-idx">03</span>
+      <div class="demo-name">JOHN KRAMER<small>139 BPM</small></div>
+      <span class="demo-time">0:30</span>
+      <div class="demo-play-btn">
+        <svg class="play-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+        <svg class="pause-icon" viewBox="0 0 24 24" style="display:none;"><path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
       </div>
+      <div class="demo-bar"><i></i></div>
     </div>
+  </div>
+</section>
 
-    <div class="contact-grid">
-      <a class="cbox reveal" href="mailto:erxmour@gmail.com">
-        <div class="mono">EMAIL</div>
-        <div class="cbig">erxmour@gmail.com</div>
-        <div class="carrow">Send Email →</div>
-      </a>
+<audio id="audio-player"></audio>
 
-      <a class="cbox reveal" href="https://ig.me/m/erxmour" target="_blank" rel="noopener">
-        <div class="mono">INSTAGRAM</div>
-        <div class="cbig">@erxmour</div>
-        <div class="carrow">Direct Message →</div>
-      </a>
-
-      <a class="cbox reveal" href="sms:erxmour@icloud.com">
-        <div class="mono">IMESSAGE</div>
-        <div class="cbig">erxmour@icloud.com</div>
-        <div class="carrow">Send Message →</div>
-      </a>
-    </div>
-  </section>
-</main>
+<section id="contact">
+  <div class="contact-head wrap">
+    <p class="sec-label reveal">04 / CONTACT</p>
+    <h2 class="display reveal" style="--d:80ms">Ain't no forms<br>Ain't no inbox black hole</h2>
+  </div>
+  <div class="contact-grid">
+    <a class="cbox reveal" href="mailto:erxmour@gmail.com" style="--d:0ms">
+      <span class="mono">Email</span>
+      <span class="cbig">Write direct</span>
+      <span class="carrow">→ erxmour@gmail.com</span>
+    </a>
+    <a class="cbox reveal" href="https://instagram.com/erxmour" target="_blank" rel="noopener" style="--d:80ms">
+      <span class="mono">Instagram</span>
+      <span class="cbig">DM ME</span>
+      <span class="carrow">→ @erxmour</span>
+    </a>
+    <a class="cbox reveal" href="sms:erxmour@icloud.com" style="--d:160ms">
+      <span class="mono">iMessage</span>
+      <span class="cbig">Text direct</span>
+      <span class="carrow">→ iMessage</span>
+    </a>
+  </div>
+</section>
 
 <footer>
-  <div class="wrap">
-    <div class="foot-row reveal">
-      <div>© 2026 erxmour</div>
-      <div>All Rights Reserved</div>
-    </div>
+  <div class="wrap foot-row reveal">
+    <span>© 2026 erxmour</span>
+    <span>Kostanay, Kazakhstan</span>
+    <span>Replies handled personally</span>
   </div>
 </footer>
 
-<!-- ИНТЕРАКТИВНЫЙ СКРИПТ (3D TILT, АНИМАЦИИ, ПЛЕЕР И ИНСТА-ФОЛЛБЭК) -->
 <script>
-// --- 1. REVEAL & TILT ANIMATIONS ---
-const observerOptions = { threshold: 0.15, rootMargin: "0px 0px -50px 0px" };
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('in');
-      setTimeout(() => entry.target.classList.add('settled'), 1200);
-      observer.unobserve(entry.target);
+  var selected = new Set();
+  var EMAIL = 'erxmour@gmail.com';
+
+  function buildMailto() {
+    if (selected.size === 0) {
+      var subject = encodeURIComponent('Inquiry');
+      var body = encodeURIComponent('Hi, I\'d like to discuss a project.\n\nProject details:\n');
+      return 'mailto:' + EMAIL + '?subject=' + subject + '&body=' + body;
     }
-  });
-}, observerOptions);
-
-document.querySelectorAll('.reveal, .reveal-left').forEach(el => observer.observe(el));
-
-// 3D Tilt Effect for cards
-document.querySelectorAll('.svc, .cbox, .demo-row').forEach(card => {
-  card.addEventListener('mousemove', e => {
-    if (!card.classList.contains('settled')) return;
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left - rect.width / 2;
-    const y = e.clientY - rect.top - rect.height / 2;
-    card.style.transform = `perspective(1000px) rotateX(${-y / 20}deg) rotateY(${x / 20}deg) translateZ(10px)`;
-  });
-
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = '';
-  });
-});
-
-// --- 2. AUDIO PLAYER LOGIC ---
-let currentAudio = null;
-let currentBtn = null;
-let currentRow = null;
-
-document.querySelectorAll('.demo-row').forEach(row => {
-  const btn = row.querySelector('.demo-play-btn');
-  const src = row.getAttribute('data-src');
-  const bar = row.querySelector('.demo-bar');
-  const fill = bar ? bar.querySelector('i') : null;
-  const timeEl = row.querySelector('.demo-time');
-
-  if (!src) return;
-
-  const audio = new Audio(src);
-
-  audio.addEventListener('loadedmetadata', () => {
-    const mins = Math.floor(audio.duration / 60);
-    const secs = Math.floor(audio.duration % 60).toString().padStart(2, '0');
-    if (timeEl) timeEl.textContent = `${mins}:${secs}`;
-  });
-
-  audio.addEventListener('timeupdate', () => {
-    if (fill && audio.duration) {
-      const pct = (audio.currentTime / audio.duration) * 100;
-      fill.style.width = `${pct}%`;
-    }
-  });
-
-  audio.addEventListener('ended', () => {
-    row.classList.remove('playing');
-    if (btn) btn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
-    if (fill) fill.style.width = '0%';
-  });
-
-  if (bar) {
-    bar.addEventListener('click', e => {
-      e.stopPropagation();
-      if (!audio.duration) return;
-      const rect = bar.getBoundingClientRect();
-      const pos = (e.clientX - rect.left) / rect.width;
-      audio.currentTime = pos * audio.duration;
-    });
+    var arr = Array.from(selected);
+    var svcList = arr.join(', ');
+    var subject = encodeURIComponent('Inquiry — ' + svcList);
+    var bodyLines = [
+      'Hi erxmour,',
+      '',
+      'I\'m interested in: ' + svcList + '.',
+      '',
+      'Project details:',
+      '— Artist / project name:',
+      '— Reference tracks or sound:',
+      '— Timeline:',
+      '— Budget (optional):',
+      '',
+      'Additional notes:'
+    ];
+    var body = encodeURIComponent(bodyLines.join('\n'));
+    return 'mailto:' + EMAIL + '?subject=' + subject + '&body=' + body;
   }
 
-  const togglePlay = (e) => {
-    e.stopPropagation();
-    if (currentAudio && currentAudio !== audio) {
-      currentAudio.pause();
-      if (currentRow) currentRow.classList.remove('playing');
-      if (currentBtn) currentBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
-    }
-
-    if (audio.paused) {
-      audio.play().then(() => {
-        row.classList.add('playing');
-        if (btn) btn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
-        currentAudio = audio;
-        currentBtn = btn;
-        currentRow = row;
-      }).catch(() => {});
-    } else {
-      audio.pause();
-      row.classList.remove('playing');
-      if (btn) btn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
-    }
-  };
-
-  btn.addEventListener('click', togglePlay);
-  row.querySelector('.demo-name').addEventListener('click', togglePlay);
-});
-
-// --- 3. SERVICES SELECTION & INSTAGRAM IN-APP FIX ---
-var selected = new Set();
-var EMAIL = 'erxmour@gmail.com';
-var sendBtn = document.getElementById('brief-send');
-var fallbackBox = document.getElementById('send-fallback');
-var copyBtn = document.getElementById('copy-request');
-var copyStatus = document.getElementById('copy-status');
-
-var isInApp = /Instagram|FBAN|FBAV|FB_IAB|TikTok|Snapchat/i.test(navigator.userAgent);
-
-function buildContent() {
-  var svcList = Array.from(selected).join(', ');
-  var subject = svcList ? 'Inquiry: ' + svcList : 'Inquiry';
-  var lines = svcList
-    ? [
-        'Hi erxmour,',
-        '',
-        "I'm interested in: " + svcList + '.',
-        '',
-        'Project details:',
-        '- Artist / project name:',
-        '- Reference tracks:',
-        '- Timeline:',
-        '- Budget (optional):'
-      ]
-    : ["Hi, I'd like to discuss a project."];
-  return { subject: subject, body: lines.join('\r\n') };
-}
-
-function buildMailto() {
-  var c = buildContent();
-  var svcList = Array.from(selected).join(', ');
-  var simpleBody = svcList ? "Hi, I'm interested in " + svcList + "." : "Hi, I'd like to discuss a project.";
-  return 'mailto:' + EMAIL +
-    '?subject=' + encodeURIComponent(c.subject) +
-    '&body=' + encodeURIComponent(simpleBody);
-}
-
-function updateSendLink() {
-  if (sendBtn && !isInApp) {
-    sendBtn.setAttribute('href', buildMailto());
-  }
-}
-
-function showFallback() {
-  if (fallbackBox) fallbackBox.hidden = false;
-}
-
-function copyText(text) {
-  if (navigator.clipboard && window.isSecureContext) {
-    return navigator.clipboard.writeText(text);
-  }
-  return new Promise(function (resolve, reject) {
-    var ta = document.createElement('textarea');
-    ta.value = text;
-    ta.setAttribute('readonly', '');
-    ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;';
-    document.body.appendChild(ta);
-    ta.select();
-    ta.setSelectionRange(0, ta.value.length);
-    var ok = false;
-    try { ok = document.execCommand('copy'); } catch (e) {}
-    document.body.removeChild(ta);
-    ok ? resolve() : reject();
-  });
-}
-
-document.querySelectorAll('.svc').forEach(function (el) {
-  el.addEventListener('click', function (e) {
-    e.preventDefault();
-    var name = el.getAttribute('data-svc');
-    el.classList.toggle('active');
-    if (selected.has(name)) { selected.delete(name); } else { selected.add(name); }
-    
-    var listEl = document.getElementById('brief-list');
-    if (listEl) {
-      listEl.textContent = selected.size === 0 ? 'none' : Array.from(selected).join(', ');
-    }
-    
-    updateSendLink();
-  });
-});
-
-if (sendBtn) {
-  sendBtn.addEventListener('click', function (e) {
-    var c = buildContent();
-    var textToCopy = 'Inquiry: ' + (Array.from(selected).join(', ') || 'General') + '\r\n\r\n' + c.body;
-
-    if (isInApp) {
+  document.querySelectorAll('.svc').forEach(function(el){
+    el.addEventListener('click', function(e){
       e.preventDefault();
-      copyText(textToCopy).then(function() {
-        showFallback();
-        if (copyStatus) copyStatus.textContent = 'Request copied! Redirecting to IG DM...';
-        setTimeout(function() {
-          window.location.href = 'https://ig.me/m/erxmour';
-        }, 1200);
-      });
-      return;
-    }
-
-    updateSendLink();
-    setTimeout(function () {
-      if (document.visibilityState === 'visible') showFallback();
-    }, 2000);
-  });
-}
-
-if (copyBtn) {
-  copyBtn.addEventListener('click', function () {
-    var c = buildContent();
-    var text = 'To: ' + EMAIL + '\r\nSubject: ' + c.subject + '\r\n\r\n' + c.body;
-    copyText(text).then(function () {
-      if (copyStatus) copyStatus.textContent = 'Copied! Paste it into email or DM';
-    }, function () {
-      if (copyStatus) copyStatus.textContent = 'Write to ' + EMAIL;
+      var name = el.getAttribute('data-svc');
+      el.classList.toggle('active');
+      if(selected.has(name)){ selected.delete(name); } else { selected.add(name); }
+      var list = document.getElementById('brief-list');
+      if(selected.size === 0){
+        list.textContent = 'none';
+      } else {
+        list.textContent = Array.from(selected).join(', ');
+      }
     });
   });
-}
 
-if (isInApp) {
-  showFallback();
-}
+  var sendBtn = document.getElementById('brief-send');
+  if (sendBtn) {
+    sendBtn.addEventListener('click', function(e){
+      e.preventDefault();
+      var url = buildMailto();
+      window.location.href = url;
+      return false;
+    });
+  }
 
-updateSendLink();
+  const player = document.getElementById("audio-player");
+  const rows = document.querySelectorAll(".demo-row");
+  let activeRow = null;
+  let timer = null;
+
+  function stopAudio() {
+    player.pause();
+    player.currentTime = 0;
+    if (timer) clearTimeout(timer);
+    if (activeRow) {
+      activeRow.querySelector(".play-icon").style.display = "block";
+      activeRow.querySelector(".pause-icon").style.display = "none";
+      activeRow.querySelector(".demo-bar i").style.width = "0%";
+      activeRow.classList.remove("playing");
+      activeRow = null;
+    }
+  }
+
+  rows.forEach(row => {
+    const btn = row.querySelector(".demo-play-btn");
+    const playIcon = btn.querySelector(".play-icon");
+    const pauseIcon = btn.querySelector(".pause-icon");
+    const bar = row.querySelector(".demo-bar");
+    const audioSrc = row.getAttribute("data-audio");
+
+    const togglePlay = (e) => {
+      e.stopPropagation();
+      if (activeRow === row) {
+        if (!player.paused) {
+          player.pause();
+          if (timer) clearTimeout(timer);
+          playIcon.style.display = "block";
+          pauseIcon.style.display = "none";
+        } else {
+          player.play();
+          playIcon.style.display = "none";
+          pauseIcon.style.display = "block";
+          const remaining = (30 - player.currentTime) * 1000;
+          timer = setTimeout(stopAudio, remaining > 0 ? remaining : 30000);
+        }
+        return;
+      }
+
+      stopAudio();
+
+      player.src = audioSrc;
+      player.play();
+      activeRow = row;
+      row.classList.add("playing");
+
+      playIcon.style.display = "none";
+      pauseIcon.style.display = "block";
+
+      timer = setTimeout(stopAudio, 30000);
+    };
+
+    btn.addEventListener("click", togglePlay);
+    row.querySelector(".demo-name").addEventListener("click", togglePlay);
+
+    bar.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const rect = bar.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const width = rect.width;
+      const percentage = Math.max(0, Math.min(1, clickX / width));
+
+      if (activeRow !== row) {
+        stopAudio();
+        player.src = audioSrc;
+        activeRow = row;
+        row.classList.add("playing");
+        playIcon.style.display = "none";
+        pauseIcon.style.display = "block";
+      }
+
+      player.currentTime = percentage * 30;
+      if (player.paused) {
+        player.play();
+      }
+      if (timer) clearTimeout(timer);
+      const remaining = (30 - player.currentTime) * 1000;
+      timer = setTimeout(stopAudio, remaining > 0 ? remaining : 30000);
+    });
+  });
+
+  setInterval(() => {
+    if (!activeRow || player.paused) return;
+    const progress = (player.currentTime / 30) * 100;
+    activeRow.querySelector(".demo-bar i").style.width = Math.min(progress, 100) + "%";
+  }, 50);
+
+  player.addEventListener("ended", stopAudio);
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealEls = document.querySelectorAll('.reveal');
+  if (reduceMotion) {
+    revealEls.forEach(el => el.classList.add('in', 'settled'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        el.classList.add('in');
+        const lock = () => el.classList.add('settled');
+        el.addEventListener('transitionend', lock, { once: true });
+        setTimeout(lock, 1200);
+        io.unobserve(el);
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -10% 0px' });
+    revealEls.forEach(el => io.observe(el));
+  }
+
+  document.querySelectorAll('.magnet').forEach(function(el){
+    if (reduceMotion) return;
+    el.addEventListener('mousemove', function(e){
+      const r = el.getBoundingClientRect();
+      const x = (e.clientX - r.left - r.width / 2) * 0.28;
+      const y = (e.clientY - r.top - r.height / 2) * 0.28;
+      el.style.transform = 'translate3d(' + x + 'px,' + y + 'px,0)';
+    });
+    el.addEventListener('mouseleave', function(){
+      el.style.transform = '';
+    });
+  });
+
+  (function attachTilt3d(){
+    if (reduceMotion) return;
+    var targets = document.querySelectorAll('.svc, .cbox, .demo-row, .navcta, .brief-bar a, .hero-cta a, .statement-tags span');
+    targets.forEach(function(el){
+      el.addEventListener('mousemove', function(e){
+        if (!el.classList.contains('settled') && (el.classList.contains('svc') || el.classList.contains('cbox') || el.classList.contains('demo-row'))) return;
+        var r = el.getBoundingClientRect();
+        var px = (e.clientX - r.left) / r.width;
+        var py = (e.clientY - r.top) / r.height;
+        var tiltX = (0.5 - py) * 12;
+        var tiltY = (px - 0.5) * 12;
+        var lift = 10;
+        var shadowOffsetY = 34;
+        var shadowBlur = 64;
+        if (el.classList.contains('svc') || el.classList.contains('cbox')) {
+          tiltX = (0.5 - py) * 18;
+          tiltY = (px - 0.5) * 18;
+          lift = 18;
+          shadowOffsetY = Math.round(30 + (py - 0.5) * 20);
+          shadowBlur = 80;
+        } else if (el.classList.contains('demo-row')) {
+          tiltX = (0.5 - py) * 9;
+          tiltY = (px - 0.5) * 9;
+          lift = 12;
+          shadowOffsetY = Math.round(22 + (py - 0.5) * 16);
+          shadowBlur = 56;
+        }
+        var shadow = '';
+        if (el.classList.contains('svc')) {
+          shadow = '0 ' + shadowOffsetY + 'px ' + shadowBlur + 'px -32px rgba(0,0,0,0.88), 0 ' + Math.round(shadowOffsetY*0.55) + 'px 40px -18px rgba(0,0,0,0.7)';
+        } else if (el.classList.contains('cbox')) {
+          shadow = '0 ' + shadowOffsetY + 'px ' + shadowBlur + 'px -36px rgba(0,0,0,0.92), 0 ' + Math.round(shadowOffsetY*0.55) + 'px 48px -20px rgba(0,0,0,0.8)';
+        } else if (el.classList.contains('demo-row')) {
+          shadow = '0 ' + shadowOffsetY + 'px ' + shadowBlur + 'px -28px rgba(0,0,0,0.88), 0 ' + Math.round(shadowOffsetY*0.5) + 'px 28px -14px rgba(0,0,0,0.72)';
+        }
+        el.style.transform = 'perspective(1200px) rotateX(' + tiltX + 'deg) rotateY(' + tiltY + 'deg) translateZ(' + lift + 'px)';
+        if (shadow) el.style.boxShadow = shadow;
+      });
+      el.addEventListener('mouseleave', function(e){
+        el.style.transform = '';
+        el.style.boxShadow = '';
+      });
+    });
+  })();
+
+  function tickTime() {
+    const el = document.getElementById('live-time');
+    if (!el) return;
+    const now = new Date().toLocaleTimeString('en-US', {
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true,
+      timeZone: 'Asia/Almaty'
+    });
+    el.textContent = now;
+  }
+  tickTime();
+  setInterval(tickTime, 30000);
 </script>
 
 </body>
